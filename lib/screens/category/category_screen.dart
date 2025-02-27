@@ -112,6 +112,36 @@ class _CategoryScreenState extends State<CategoryScreen> {
     final theme = Theme.of(context);
 
     return Scaffold(
+      backgroundColor: const Color(0xFFF5F5F5),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(
+          'หมวดหมู่สินค้า',
+          style: TextStyle(
+            color: theme.primaryColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search, color: Colors.black54),
+            onPressed: () {
+              // ฟังก์ชันค้นหาสินค้า
+            },
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.shopping_cart_outlined,
+              color: Colors.black54,
+            ),
+            onPressed: () {
+              // นำไปยังหน้าตะกร้าสินค้า
+            },
+          ),
+        ],
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
