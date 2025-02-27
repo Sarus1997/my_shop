@@ -19,12 +19,10 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     HomeScreen(),
-    CategoryScreen(someArgument),
+    CategoryScreen(),
     CartContent(),
     UserContent(),
   ];
-
-  static get someArgument => null;
 
   void _onItemTapped(int index) {
     setState(() {
